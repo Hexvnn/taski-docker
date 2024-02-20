@@ -1,25 +1,17 @@
-<<<<<<< HEAD
-name: Main Taski workflow
-
-=======
 name: Main Taski Workflow
->>>>>>> 3ed2cfe366073a1839e7ade0e0c1bbc797551075
 on:
   push:
     branches:
       - main
-<<<<<<< HEAD
 
 jobs:
   tests:
 =======
 jobs:
   checkout-and-print-tree:
->>>>>>> 3ed2cfe366073a1839e7ade0e0c1bbc797551075
     runs-on: ubuntu-latest
 
     steps:
-<<<<<<< HEAD
     - name: Check out code
       uses: actions/checkout@v3
     - name: Set up Python
@@ -32,9 +24,7 @@ jobs:
         pip install flake8==6.0.0 flake8-isort==6.0.0
     - name: Test with flake8
       run: python -m flake8 backend/
-=======
       - name: Check out repository code
         uses: actions/checkout@v3
       - name: Print project tree
         run: tree .
->>>>>>> 3ed2cfe366073a1839e7ade0e0c1bbc797551075
